@@ -6,5 +6,7 @@
 ```
 sudo apt install scim-modules-table
 mkdir -p text
-find ngienbun/ -type f -name '*bin' -exec scim-make-table {} -o text/{}.txt \;
+cd ngienbun/
+find . -type f -name '*bin' -exec scim-make-table {} -o ../text/{}.txt \;
+cd -
 ```
